@@ -9,28 +9,32 @@
   <body>
     <script>
       let inicio = ["unacadena", 3, 9, 1, 10, 500, 1, 10, true];
-      let newArray = [];
-      // let filtro = inicio.filter((e)=> Number.isInteger(e));
-      // console.log(filtro);
-      for (i = 0; i < inicio.length; i++) {
-        if (typeof inicio[i] === "Number") {
-          newArray.push(inicio[i]);
-        }
-      }
+      let filtro = inicio.filter((e) => Number.isInteger(e));
+      console.log(filtro);
 
-      function orderNumber(array) {
-        for (i = 0; i < array.length; i++) {
-          for (j = i; j < array.length; j++) {
-            if (array[i] < array[j]) {
-              let x = array[j];
-              array[j] = array[i];
-              array[i] = x;
+      function orderNumbers(filtro) {
+        let array = [];
+        let newArray = filtro[0];
+        for (let i = 0; i < filtro.length; i++) {
+          array.push(filtro[i]);
+        }
+        console.log(newArray);
+
+        let numberOrder = array.length;
+        for (let i = 0; i < numberOrder; i++) {
+          for (let j = 0; j < numberOrder; j++) {
+            if (j + 1 !== numberOrder) {
+              if (array[j] < array[j + 1]) {
+                let dato = array[j + 1];
+                array[j + 1] = array[j];
+                array[j] = dato;
+              }
             }
           }
         }
         console.log(array);
       }
-      orderNumber(newArray);
+      console.log(orderNumbers(filtro));
     </script>
   </body>
 </html>
