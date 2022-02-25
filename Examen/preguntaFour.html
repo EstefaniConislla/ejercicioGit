@@ -1,0 +1,12 @@
+<script>
+    function palindromo(array){
+        let newArray = array.split("");
+        let reverse = newArray.reverse();
+
+        return array == reverse.join("") ? "Si es palindromo" : "No es palindromo";
+ }
+
+ console.log(palindromo('osos'));
+ console.log(palindromo('amo a roma'));
+ console.log(palindromo('oso'));
+</script>
