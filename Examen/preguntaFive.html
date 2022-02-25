@@ -1,0 +1,56 @@
+//Persona
+function Persona(nombre, edad, clasificación){
+    this.nombre=  nombre;
+    this.edad=    edad;
+    this.clasificación=  clasificación;
+    this.metodoOne= function obtDetalles(){
+      document.write("Nombre: " + this.nombre + "<br>" + 
+                     "Edad: " + this.edad + "<br>" + 
+                     "Clasificación: " + this.clasificación + "<br>");
+    }; 
+  }
+    var fichaOne = new Persona("Luz","18","9");
+      fichaOne.metodoOne();
+  
+//Etudiante
+function Estudiante(curso, grupo){
+    this.curso=   curso;
+    this.grupo=   grupo;
+    this.metodoTwo= function registrar(){
+        document.write("Curso: " + this.curso + "<br>" + 
+                       "Grupo: " + this.grupo + "<br>");
+    };
+  }
+    var fichaTwo = new Estudiante("Programación","Power");
+      fichaTwo.metodoTwo();
+  
+//Profesor
+function Profesor(asignatura, nivel){
+    this.asignatura=  asignatura;
+    this.nivel=       nivel;
+    this.metodoThree =     function asignar(){
+        document.write("Asignatura: " + this.asignatura + "<br>" + 
+        "Nivel: " + this.nivel+ "<br>");
+    };
+}
+var fichaThree = new Profesor("Html","Básico");
+    fichaThree.metodoThree();
+
+  
+var datos=[
+{ nombre: "Noah", apellido: "Villalobos", },
+{ nombre: "Yup"},
+{ nombre: "Abelardo"},
+{ nombre: "Ana"},
+];
+  
+var container=document.getElementById("contenedor");
+datos.forEach(function(element,index,array){
+var divContenedor=document.createElement("div");
+for(var prop in element){
+    var pContenedor = document.createElement("p");
+    pContnedor.innerHTML=prop + ":" + element[prop];
+    divContenedor.appendChild(pContnedor);
+}
+container.appendChild(divContenedor)
+});
