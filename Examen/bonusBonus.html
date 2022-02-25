@@ -1,0 +1,21 @@
+<script>
+//Escribe una function que genere todas las posibles combinaciones con las letras de dicho string
+function allPosibleCombinations(words){
+    if(!Array.isArray(words)){
+        throw TypeError('Debes ingresar un arreglo');
+    }
+    return words.reduce((a, b) => a.concat(a.map(d => [b].concat(d))), [[]]); 
+}
+
+
+try {
+    console.log(allPosibleCombinations([a, e, i]));
+    // [[], [a], [e], [i], [a, e], [e, i], [a, i], [a, e, i]]
+} catch (e) {
+    console.log(`Error: ${e.message}`);
+}
+
+console.log();
+
+
+</script>
