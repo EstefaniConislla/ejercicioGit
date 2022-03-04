@@ -1,13 +1,61 @@
 <script>
-  function numberRandom() {
-    let number = Math.floor(Math.random() * 100);
-    for (let number = 0; number < 5; number++) {
-      if (number % 2 == 0) {
-        return "par";
-      } else {
-        return "impar";
-      }
+  //   function parOImpar(number) {
+  //     if (number % 2 == 0) {
+  //       return "Es un número par";
+  //     } else {
+  //       return "Es un número impar";
+  //     }
+  //   }
+  //   console.log(parOImpar(math.floor(Math.random() * 100)));
+  //   //no se como ponerle que genere 5 números
+  //   function parOImpar (number){
+  //         if (number %2 == 0){
+  //             return "Es un número par"
+  //         } else {
+  //             return "Es un número impar"
+  //         }
+  //     }
+  //     console.log("Primer número: "+parOImpar(1,100));
+  //     console.log("Segundo número: "+parOImpar(1,100));
+  //     console.log("Tercer número: "+parOImpar(1,100));
+  //     console.log("Cuarto número: "+parOImpar(1,100));
+  //     console.log("Quinto número: "+parOImpar(1,100));
+
+  let arr = function random(min, max, decimals) {
+    let number = Math.pow(10, decimals);
+    min = min * number;
+    max = max * number;
+    return Math.floor(Math.random() * (max - min + 1) + min) / number;
+  };
+
+  let array = [];
+  for (i = 1; i <= 5; i++) {
+    array.push(arr(1, 100, 0));
+    if (array[0] % 2 == 0) {
+      console.log("Es un número par");
+    } else {
+      console.log("Es un número impar");
     }
-    console.log(numberRandom(number));
-}
+    if (array[1] % 2 == 0) {
+      console.log("Es un número par");
+    } else {
+      console.log("Es un número impar");
+    }
+    if (array[2] % 2 == 0) {
+      console.log("Es un número par");
+    } else {
+      console.log("Es un número impar");
+    }
+    if (array[3] % 2 == 0) {
+      console.log("Es un número par");
+    } else {
+      console.log("Es un número impar");
+    }
+    if (array[4] % 2 == 0) {
+      console.log("Es un número par");
+    } else {
+      console.log("Es un número impar");
+    }
+  }
+  console.log(array);
 </script>
