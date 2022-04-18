@@ -19,7 +19,7 @@ body {
 #header {
   display: grid;
   justify-items: center;
-  background-image: url('../IMG/Grupo_9213@2x.webp');
+  background-image: url("IMG/Enmascarar grupo 289@3x.webp");
   background-size: 100%;
   padding-bottom: 120px;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
     grid-column: auto;
     max-width: none;
     justify-items: center;
-    background-image: url('https://comunidad.venntors.com/wp-content/uploads/2021/12/Sustraccion-11.svg');
+    background-image: url("https://comunidad.venntors.com/wp-content/uploads/2021/12/Sustraccion-11.svg");
     background-size: 100%;
     padding-bottom: 120px;
     background-repeat: no-repeat;
@@ -407,7 +407,7 @@ h4 {
   font-size: 2.5em;
 }
 .fondo_procesos {
-  background-image: url(../IMG/Rectángulo_8199@2x.webp);
+  background-image: url("IMG/Rectángulo_8199@2x.webp");
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -487,7 +487,7 @@ h4 {
   cursor: pointer;
   width: 200px;
   height: 200px;
-  background-image: url("../img/Grupo_9210@2x.webp");
+  background-image: url("IMG/Grupo_9210@3x.webp");
   background-size: 100%;
   border: none;
   background-color: transparent;
@@ -499,7 +499,7 @@ h4 {
   cursor: pointer;
   width: 200px;
   height: 200px;
-  background-image: url("../img/Grupo_7025@2x.webp");
+  background-image: url("IMG/Grupo_7025@3x.webp");
   background-size: 100%;
   border: none;
   background-color: transparent;
@@ -511,7 +511,7 @@ h4 {
   cursor: pointer;
   width: 200px;
   height: 200px;
-  background-image: url("../img/Grupo_7024@2x.webp");
+  background-image: url("IMG/Grupo_7024@3x.webp");
   background-size: 100%;
   border: none;
   background-color: transparent;
@@ -560,11 +560,11 @@ h4 {
   .fondo_procesos {
     display: none;
   }
-  .fondo_procesos_media {
+  .fondo_procesos {
     margin-top: 50px;
     display: unset;
   }
-  .info_procesos1_media {
+  .info_procesos1 {
     display: grid;
     grid-template-rows: auto auto;
     border: 1px solid;
@@ -579,7 +579,7 @@ h4 {
     margin-bottom: 20px;
     width: 200px;
   }
-  .info_procesos2_media {
+  .info_procesos2 {
     display: grid;
     grid-template-rows: auto auto;
     border: 1px solid;
@@ -594,7 +594,7 @@ h4 {
     margin-bottom: 20px;
     width: 200px;
   }
-  .info_procesos3_media {
+  .info_procesos3 {
     display: grid;
     grid-template-rows: auto auto;
     border: 1px solid;
@@ -609,29 +609,22 @@ h4 {
     margin-bottom: 20px;
     width: 200px;
   }
-  .boton_img01_media {
+  .boton_img01 {
     margin-top: 30px;
     cursor: pointer;
     width: 100px;
     height: 100px;
-    background-image: url("../img/img01.png");
+    background-image: url("IMG/img01.png");
     background-size: 100%;
     border: none;
     background-color: transparent;
   }
-  .p_1_media {
+  .p_1 .p_2 .p_3{
     margin-top: 10px;
     font-size: 1.2em;
   }
-  .p_2_media {
-    margin-top: 10px;
-    font-size: 1.2em;
-  }
-  .p_3_media {
-    margin-top: 10px;
-    font-size: 1.2em;
-  }
-  .info_procesos2_media {
+
+  .info_procesos2 {
     display: grid;
     border: 1px solid;
     border-color: #b4cce2;
@@ -644,17 +637,17 @@ h4 {
     justify-items: center;
     margin-bottom: 20px;
   }
-  .boton_img02_media {
+  .boton_img02 {
     margin-top: 30px;
     cursor: pointer;
     width: 100px;
     height: 100px;
-    background-image: url("../img/img02.png");
+    background-image: url("IMG/img02.png");
     background-size: 100%;
     border: none;
     background-color: transparent;
   }
-  .info_procesos3_media {
+  .info_procesos3 {
     display: grid;
     border: 1px solid;
     border-color: #b4cce2;
@@ -667,17 +660,17 @@ h4 {
     justify-items: center;
     margin-bottom: 20px;
   }
-  .boton_img03_media {
+  .boton_img03 {
     margin-top: 30px;
     cursor: pointer;
     width: 100px;
     height: 100px;
-    background-image: url("../img/img03.png");
+    background-image: url("IMG/img03.png");
     background-size: 100%;
     border: none;
     background-color: transparent;
   }
-  .nuevo_boton_linea {
+  .nuevo_boton {
     background-image: url("https://venn-ws-bucket.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/16123155/ld-divisor-movil.svg");
     display: block;
     margin-right: auto;
@@ -689,13 +682,13 @@ h4 {
     background-position-y: 50%;
     background-size: 75%;
   }
-  .circulos_procesos_media {
+  .circulos_procesos {
     margin-top: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
   }
-  .boton_01_media {
+  .boton_01 {
     cursor: pointer;
     width: 35px;
     height: 35px;
@@ -704,10 +697,10 @@ h4 {
     border: none;
     background-color: transparent;
   }
-  .boton_01_media:hover {
+  .boton_01:hover {
     background-image: url("IMG/c_01_blue.png");
   }
-  .boton_02_media {
+  .boton_02 {
     cursor: pointer;
     width: 35px;
     height: 35px;
@@ -716,10 +709,10 @@ h4 {
     border: none;
     background-color: transparent;
   }
-  .boton_02_media:hover {
+  .boton_02:hover {
     background-image: url("IMG/c_02_blue.png");
   }
-  .boton_03_media {
+  .boton_03 {
     cursor: pointer;
     width: 35px;
     height: 35px;
@@ -728,7 +721,7 @@ h4 {
     border: none;
     background-color: transparent;
   }
-  .boton_03_media:hover {
+  .boton_03:hover {
     background-image: url("IMG/c_03_blue.png");
   }
   .button_process_medium {
@@ -754,14 +747,12 @@ h4 {
 }
 
 #plataforma {
-  background-image: url('IMG/Enmascarar_grupo_259@2x.webp');
+  background-image: url("IMG/Enmascarar grupo 259@3x.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 50px;
 }
-.linea_fondo {
-  display: none;
-}
+
 .plataforma {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -840,11 +831,6 @@ h4 {
 @media screen and (min-width:240px) and (max-width:767px) {
   #plataforma {
     background-image: none;
-  }
-  .linea_fondo {
-    display: unset;
-    width: 100%;
-    height: 10px;
   }
 }
 .box_container {
