@@ -1,14 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  text-align: center;
-  font-family: "Hind", sans-serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #002b39;
-}
 .container {
   display: grid;
   margin: 0;
@@ -75,7 +64,6 @@ body {
     grid-column: auto;
     max-width: none;
     justify-items: center;
-    background-image: url("https://comunidad.venntors.com/wp-content/uploads/2021/12/Sustraccion-11.svg");
     background-size: 100%;
     padding-bottom: 120px;
     background-repeat: no-repeat;
@@ -94,7 +82,7 @@ body {
     max-width: none;
   }
 }
-.button_made {
+.boton_made {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 255px;
@@ -108,7 +96,7 @@ body {
   border-radius: 6px;
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
 }
-.button_made:hover {
+.boton_made:hover {
   cursor: pointer;
   background: white;
   background: linear-gradient(180deg, white 0%, white 100%);
@@ -248,9 +236,14 @@ h4 {
 }
 #herramientas {
   display: grid;
-  grid-template-rows: auto auto auto;
   justify-items: center;
+  background-image: url("IMG/Grupo 9213@3x.webp");
+  background-size: 100%;
+  padding: 300px;
+  background-repeat: no-repeat;
+  margin-top: -255px;
 }
+
 .div_h1 {
   display: grid;
   width: 500px;
@@ -271,7 +264,7 @@ h4 {
     font-size: 1.5em;
   }  
 }
-.herramientas {
+.box_herramientas {
   display: grid;
   grid-template-columns: 345px 345px 345px;
   gap: 30px;
@@ -368,7 +361,7 @@ h4 {
   -webkit-font-smoothing: antialiased;
 }
 @media screen and (min-width:240px) and (max-width:1164px) {
-  .herramientas {
+  .box_herramientas {
     display: grid;
     grid-template-rows: auto auto auto;
     gap: 30px;
@@ -426,9 +419,7 @@ h4 {
   grid-template-columns: auto auto auto;
   gap: 100px;
 }
-.procesos:hover {
-  cursor: pointer;
-}
+
 .img_numero {
   display: grid;
   height: 25px;
@@ -438,7 +429,7 @@ h4 {
   width: 200px;
   grid-row: 2;
 }
-.p_1 {
+.p_1 .p_2 .p_3{
   display: grid;
   grid-row: 3;
   align-content: center;
@@ -446,83 +437,34 @@ h4 {
   align-items: center;
   justify-items: center;
 }
-.p_2 {
-  display: grid;
-  grid-row: 3;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-}
-.p_3 {
-  display: grid;
-  grid-row: 3;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-}
-.info_procesos1 {
+
+.info_procesos1 .info_procesos2 .info_procesos3{
   display: grid;
   justify-items: center;
   width: 210px;
   height: 255px;
   grid-template-rows: 25px 200px 30px;
 }
-.info_procesos2 {
-  display: grid;
-  justify-items: center;
-  width: 210px;
-  height: 255px;
-  grid-template-rows: 25px 200px 30px;
-}
-.info_procesos3 {
-  display: grid;
-  justify-items: center;
-  width: 210px;
-  height: 255px;
-  grid-template-rows: 25px 200px 30px;
-}
-.boton_img01 {
+
+#boton_img01 #boton_img02 #boton_img03{
   cursor: pointer;
-  width: 200px;
-  height: 200px;
-  background-image: url("IMG/Grupo_9210@3x.webp");
-  background-size: 100%;
-  border: none;
   background-color: transparent;
-}
-.boton_img01:hover {
-  background-image: url("https://comunidad.venntors.com/wp-content/uploads//2021/12/nuevo7023.svg");
-}
-.boton_img02 {
-  cursor: pointer;
-  width: 200px;
-  height: 200px;
-  background-image: url("IMG/Grupo_7025@3x.webp");
-  background-size: 100%;
+  width: 100px;
+  height: 100px;
   border: none;
-  background-color: transparent;
 }
-.boton_img02:hover {
-  background-image: url("https://comunidad.venntors.com/wp-content/uploads//2021/12/nuevo7025.svg");
-}
-.boton_img03 {
-  cursor: pointer;
-  width: 200px;
-  height: 200px;
-  background-image: url("IMG/Grupo_7024@3x.webp");
-  background-size: 100%;
+
+.prueba1 .prueba2 .prueba3{
   border: none;
+  margin-top: 30px;
   background-color: transparent;
+  width: 50px;
 }
-.boton_img03:hover {
-  background-image: url("https://comunidad.venntors.com/wp-content/uploads//2021/12/Grupo-7024-1.svg");
-}
-.button_process_medium {
+
+.boton_process_medium {
   display: none;
 }
-.button_process {
+.boton_process {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 255px;
@@ -536,7 +478,7 @@ h4 {
   border-radius: 6px;
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
 }
-.button_process:hover {
+.botonn_process:hover {
   cursor: pointer;
   background: white;
   background: linear-gradient(180deg, white 0%, white 100%);
@@ -564,7 +506,7 @@ h4 {
     margin-top: 50px;
     display: unset;
   }
-  .info_procesos1 {
+  .info_procesos1_medium .info_procesos2_medium .info_procesos3_medium{
     display: grid;
     grid-template-rows: auto auto;
     border: 1px solid;
@@ -579,97 +521,21 @@ h4 {
     margin-bottom: 20px;
     width: 200px;
   }
-  .info_procesos2 {
-    display: grid;
-    grid-template-rows: auto auto;
-    border: 1px solid;
-    border-color: #b4cce2;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px 2px #ecedee;
-    font-family: Arial, Helvetica, sans-serif;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 20px;
-    width: 200px;
-  }
-  .info_procesos3 {
-    display: grid;
-    grid-template-rows: auto auto;
-    border: 1px solid;
-    border-color: #b4cce2;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px 2px #ecedee;
-    font-family: Arial, Helvetica, sans-serif;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 20px;
-    width: 200px;
-  }
-  .boton_img01 {
-    margin-top: 30px;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    background-image: url("IMG/img01.png");
-    background-size: 100%;
-    border: none;
-    background-color: transparent;
-  }
-  .p_1 .p_2 .p_3{
+  
+  .p_1_medium .p_2_medium .p_3_medium{
     margin-top: 10px;
     font-size: 1.2em;
   }
 
-  .info_procesos2 {
-    display: grid;
-    border: 1px solid;
-    border-color: #b4cce2;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px 2px #ecedee;
-    font-family: Arial, Helvetica, sans-serif;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 20px;
-  }
-  .boton_img02 {
+  #boton_img01_medium #boton_img02_medium #boton_img03_medium{
     margin-top: 30px;
     cursor: pointer;
     width: 100px;
     height: 100px;
-    background-image: url("IMG/img02.png");
-    background-size: 100%;
     border: none;
     background-color: transparent;
   }
-  .info_procesos3 {
-    display: grid;
-    border: 1px solid;
-    border-color: #b4cce2;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px 2px #ecedee;
-    font-family: Arial, Helvetica, sans-serif;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 20px;
-  }
-  .boton_img03 {
-    margin-top: 30px;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    background-image: url("IMG/img03.png");
-    background-size: 100%;
-    border: none;
-    background-color: transparent;
-  }
+  
   .nuevo_boton {
     background-image: url("https://venn-ws-bucket.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/16123155/ld-divisor-movil.svg");
     display: block;
@@ -724,7 +590,7 @@ h4 {
   .boton_03:hover {
     background-image: url("IMG/c_03_blue.png");
   }
-  .button_process_medium {
+  .boton_process_medium {
     display: grid;
     grid-row: 6;
     margin-top: 30px;
@@ -741,7 +607,7 @@ h4 {
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
     align-content: center;
   }
-  .button_process {
+  .boton_process {
     display: none;
   }
 }
@@ -914,7 +780,7 @@ h4 {
 .box:hover {
   cursor: pointer;
 }
-.plataforma .button_made {
+.plataforma .boton_made {
   display: grid;
   grid-row: 4;
   align-content: center;
@@ -1183,4 +1049,15 @@ h4 {
     size: auto;
     gap: 10px;
 }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #002b39;
 }
