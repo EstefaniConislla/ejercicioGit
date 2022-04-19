@@ -54,8 +54,8 @@
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 @media screen and (min-width:240px) and (max-width:767px) {
   #header {
@@ -83,18 +83,16 @@
   }
 }
 .boton_made {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 255px;
-  height: 55px;
-  background: rgb(1,172,254);
+  margin-top: 55px;
+  margin-bottom: 60px;
+  width: 265px;
+  height: 65px;
   background: linear-gradient(180deg, rgba(1,172,254,1) 0%, rgba(9,126,239,1) 100%);
   color: white;
   font-size: 1.1em;
   font-weight: 600;
-  border: 0px;
   border-radius: 6px;
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px 2px rgb(0 0 0 / 20%);
 }
 .boton_made:hover {
   cursor: pointer;
@@ -266,8 +264,8 @@ h4 {
 }
 .box_herramientas {
   display: grid;
-  grid-template-columns: 345px 345px 345px;
-  gap: 30px;
+  grid-template-columns: 340px 340px 340px;
+  gap: 50px;
   background-color: white;
 }
 .tarjeta_herramientas1 {
@@ -393,17 +391,18 @@ h4 {
 #procesos {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  justify-content: center;
   justify-items: center;
 }
 .h1_procesos {
   font-size: 2.5em;
+  margin-top: -80px;
+  margin-bottom: 64px;
 }
 .fondo_procesos {
-  background-image: url("IMG/Rectángulo_8199@2x.webp");
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 15px;
   width: 100%;
   height: 280px;
   background-repeat: no-repeat;
@@ -414,10 +413,13 @@ h4 {
 .fondo_procesos_media {
   display: none;
 }
+
 .procesos {
   display: grid;
-  grid-template-columns: auto auto auto;
+   grid-template-columns: auto auto auto;
   gap: 100px;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 
 .img_numero {
@@ -429,13 +431,29 @@ h4 {
   width: 200px;
   grid-row: 2;
 }
-.p_1 .p_2 .p_3{
+
+.p_1{
   display: grid;
   grid-row: 3;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+  margin-top: -110px;
+  font-size: 20px;
+  margin-right: -260px;
+}
+
+.p_2{
+  display: grid;
+  grid-row: 3;
+  margin-top: -110px;
+  font-size: 20px;
+  margin-right: -260px;
+} 
+
+.p_3{
+  display: grid;
+  grid-row: 3;
+  margin-top: -110px;
+  font-size: 20px;
+  margin-right: -260px;
 }
 
 .info_procesos1 .info_procesos2 .info_procesos3{
@@ -445,13 +463,33 @@ h4 {
   height: 255px;
   grid-template-rows: 25px 200px 30px;
 }
-
-#boton_img01 #boton_img02 #boton_img03{
+#boton_img01{
   cursor: pointer;
-  background-color: transparent;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
   border: none;
+  background-color: transparent;
+  align-content: space-around;
+}
+#boton_img02{
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
+  border: none;
+  background-color: transparent;
+  align-content: space-around;
+}
+
+#boton_img03{
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
+  border: none;
+  background-color: transparent;
+  align-content: space-around;
 }
 
 .prueba1 .prueba2 .prueba3{
@@ -465,11 +503,10 @@ h4 {
   display: none;
 }
 .boton_process {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 255px;
-  height: 55px;
-  background: rgb(1,172,254);
+  margin-top: 300px;
+  margin-bottom: 50px;
+  width: 270px;
+  height: 70px;
   background: linear-gradient(180deg, rgba(1,172,254,1) 0%, rgba(9,126,239,1) 100%);
   color: white;
   font-size: 1.1em;
@@ -526,8 +563,18 @@ h4 {
     margin-top: 10px;
     font-size: 1.2em;
   }
+  #boton_img01_medium {
+    margin-top: 30px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-image: url("IMG/img01.png");
+    background-size: 100%;
+    border: none;
+    background-color: transparent;
+  }
 
-  #boton_img01_medium #boton_img02_medium #boton_img03_medium{
+  #boton_img02_medium #boton_img03_medium{
     margin-top: 30px;
     cursor: pointer;
     width: 100px;
@@ -597,7 +644,6 @@ h4 {
     margin-bottom: 30px;
     width: 255px;
     height: 55px;
-    background: rgb(1,172,254);
     background: linear-gradient(180deg, rgba(1,172,254,1) 0%, rgba(9,126,239,1) 100%);
     color: white;
     font-size: 1.1em;
@@ -703,26 +749,23 @@ h4 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto 150px;
-  gap: 30px 30px;
+  gap: 50px 50px;
   max-width: 930px;
 }
 .box {
-  background-color: white;
   background: linear-gradient(180deg, white 85%, #e5f3fa 100%);
   width: 280px;
   height: 130px;
   font-size: 0.99em;
-  font-weight: 500;
   border: 1px solid;
-  border-color: #b4cce2;
-  border-radius: 10px;
-  box-shadow: 0px 15px 10px 2px #ecedee;
-  font-family: Arial, Helvetica, sans-serif;
+  border-color: #afc9e1;
+  border-radius: 7px;
+  box-shadow: 5px 15px 20px 5px #70767d;
 }
 .box_img {
-  width: 35px;
-  height: 35px;
-  padding-top: 20px;
+  width: 50px;
+  height: 50px;
+  padding-top: 12px;
 }
 @media screen and (min-width:581px) and (max-width:939px) {
   .box_container {
@@ -789,7 +832,6 @@ h4 {
 }
 
 #footer {
-  background: rgb(4,121,246);
   background: linear-gradient(270deg, rgba(4,121,246,1) 0%, rgba(36,138,247,1) 72%, rgba(52,147,247,1) 100%);
   display: grid;
   justify-items: center;
@@ -836,7 +878,6 @@ h4 {
 }
 .hipervinculo_footer {
   color: white;
-  font-size: 0.9em;
   font-weight: 500;
   text-decoration: none;
 }
